@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Redirect Dashboard</title>
+</head>
+<body>
+    <h1>Website Redirect Dashboard</h1>
+    <p>Select a website to redirect:</p>
+    <select id="websiteSelect">
+        <option value="">Select a website</option>
+        <option value="https://www.pornhub.com/">cafemocha</option>
+        <option value="https://pinayflixtv.com/">nescafe</option>
+        <!-- Add more options as needed -->
+    </select>
+    <button onclick="redirect()">Go</button>
+
+    <script>
+        function redirect() {
+            var websiteUrl = document.getElementById("websiteSelect").value;
+            if (websiteUrl !== "") {
+                window.location.href = websiteUrl;
+            } else {
+                alert("Please select a website to redirect.");
+            }
+        }
+    </script>
+</body>
+</html>
